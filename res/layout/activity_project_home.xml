@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/TopImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_button"
+            android:text="重庆"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+        </EditText>
+
+        <ImageView
+            android:id="@+id/keyworksouch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/top_souch" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/TopImage" >
+
+        <RelativeLayout
+            android:id="@+id/testRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/view_line" >
+            </android.support.v4.view.ViewPager>
+
+            <LinearLayout
+                android:id="@+id/dotlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/viewpager"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/homegridView"
+                android:layout_width="fill_parent"
+                android:layout_height="160dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/viewpager"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/view_line"
+                android:gravity="center"
+                android:horizontalSpacing="10dp"
+                android:numColumns="4"
+                android:verticalSpacing="10dp" >
+            </GridView>
+
+            <RelativeLayout
+                android:id="@+id/ProjectBody"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/homegridView"
+                android:layout_alignParentLeft="true"
+                >
+
+                <View.ListViewForScrollView
+                    android:id="@+id/HomeListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textView1"
+                     >
+                </View.ListViewForScrollView>
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:text="热门品牌" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/tr"
+                    android:text=" " />
+
+                <Button
+                    android:id="@+id/tr"
+                    android:layout_width="520dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/HomeListView"
+                    android:layout_marginTop="14dp"
+                    android:text="点击显示全部" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

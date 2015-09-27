@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Cars_Help</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="product1">《暴走大事件》由暴走漫画荣誉出品，是一档让人只要点开就根本停不下来，乐得合不拢嘴的新闻脱口秀节目，在轻松搞怪的同时，又具有极强的社会讽刺意义。主持人王尼玛更凭借诙谐幽默的语言风格、无节操无下限的犀利吐槽，受到网友们的热烈追捧。</string>
+    <string name="cunters">有效期
+2015年03月11日至2015年04月30日
+可用时间
+糯米券在有效期内通用，无限制
+11:00-14:00
+17:00-21:00
+预约提示
+商家无需预约，直接消费（高峰期间消费需排号等位）
+预约位逾期不保留，请准时
+使用规则
+团购用户暂不享受店内其他优惠
+每张糯米券限2人使用，超出收费标准：超出部分按当时店内实际价格收取
+每次消费不限使用糯米券张数
+本单仅限堂食</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+
+</resources>
